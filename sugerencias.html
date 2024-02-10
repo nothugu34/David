@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sugerencias</title>
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">&#8801</label>
+        <nav class = "Menu">
+            <a href = "index.html">Página principal</a>
+            <a href = "chapiza.html">Cha🍕</a>
+            <a href = "script.html">Actividades de MP hechos con JS</a>
+            <a href="ingendros.html">Ingendros</a>
+            <label for="check" class="esconder-menu">&#215</label>
+        </nav>
+    </header>
+
+    <main>
+        <h1>
+            Seleccione cualquiera de las siguientes sugerencias
+        </h1>
+    
+        <select id="Opciones">
+            <option value="Opcion1">Primera sugerencia (skibidi toilet en modo 1945)</option>
+            <option value="Opcion2">Segunda sugerencia (Creepypasta del "Mini Mini")</option>
+            <option value="Opcion3">Tercera sugerencia (Creepypasta de "¿Por qué te tatuatís?")</option>
+            <option value="Opcion4">Cuarta sugerencia (¿Por qué me piden esto? 😭)</option>
+            <!--<option value="Opcion5">Quinta sugerencia (Una licuadora ¿XD?)</option>-->
+        </select>
+    
+        <div id="divOpcion1">
+            <img src="Sugerencias/Sugerencia1/img/Sugerencia1.jpg" alt="Sugerencia 1" class="img" id="img1" onclick="skibidisound()">
+            <audio id="skibidi" src="Sugerencias/Sugerencia1/audio/skibidi.mp4"></audio>
+        </div>
+    
+        <div id="divOpcion2" class="hidden">
+            <video controls class="tiktok">
+                <source src="Sugerencias/Sugerencia2.mp4" type="video/mp4">
+            </video>
+        </div>
+    
+        <div id="divOpcion3" class="hidden">
+            <video controls class="tiktok">
+                <source src="Sugerencias/Sugerencia3.mp4" type="video/mp4">
+            </video>
+        </div>
+    
+        <div id="divOpcion4" class="hidden">
+            <div class="form">
+                <label for="text">Ingrese su edad</label><br>
+                <input type="number" id="text"><br><br>
+                <input type="submit" id="submit"><br><br>
+                <p id="paragraph"></p><br>
+                <img src="Sugerencias/Sugerencia5/img/Guitar.jpg" id="img2" style="display: none;" onclick="fireintheholesound()" class="img">
+            </div>
+            <audio id="fire in the hole" src="Sugerencias/Sugerencia5/sound/Fire in the hole.mp4"></audio>
+        </div>
+        <!--
+        <div id="divOpcion5" class="hidden">
+            <div class="container">
+                <div id="blender" class="blender">
+                    <div class="blender-button" id="blender-button" onclick="turnOnBlender()"></div>
+                </div>
+            </div>
+            <audio id="blender-button-sound" src="Sugerencias/Sugerencia4/sound/botonLicuadora.mp3" type="audio/mpeg"></audio>
+            <audio id="blender-sound" src="Sugerencias/Sugerencia4/sound/licuadora.mp3" type="audio/mpeg" loop></audio>
+        </div>
+    -->
+    </main>
+    <br><br>
+    <footer>
+        &copy: 2024 Hugu34
+    </footer>
+    <link rel="stylesheet" href="sugerencias.css">
+    <script src="sugerencias.js"></script>
+</body>
+</html>

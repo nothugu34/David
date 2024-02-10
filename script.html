@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ejercicios de MP</title>
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">&#8801</label>
+        <nav class = "Menu">
+            <a href = "index.html">Página principal</a>
+            <a href = "chapiza.html">Cha🍕</a>
+            <a href = "ingendros.html">Ingendros</a>
+            <a href="sugerencias.html">Sugerencias</a>
+            <label for="check" class="esconder-menu">&#215</label>
+        </nav>
+    </header>
+
+    <main>
+        <h1>
+            A continuación, una muestra de los ejercicios que he hecho en este primer cuatrimestre.<br>
+            Seleccione cualquiera de las siguientes opciones para que se despliegue su respectivo formulario
+        </h1>
+        <hr>
+        <select id="Opciones">
+            <option value="Opcion1">Juego de adivinar un número aleatorio entre el 1 y el 100</option>
+            <option value="Opcion2">Convertir de Decimal a Binario Y Viceversa</option>
+            <option value="Opcion3">Convertir de Decimal a Octal Y Viceversa</option>
+            <option value="Opcion4">Convertir de Decimal a Hexadecimal Y Viceversa</option>
+            <option value="Opcion5">Calcular si un número es perfecto o no</option>
+        </select>
+        <div id="formularioOpcion1">
+            <p>Bienvenido a este increíble juego de adivinar números<br>
+                Tu objetivo será adivinar el número que se ha escogido aleatoriamente en un intervalo del 1 al 100 y, además, solo números enteros
+            </p>
+            <div class="form">
+                <label for="numAl">Ingresa el número que crees que es el correcto</label>
+                <br>
+                <input type="number" id="numAl">
+                <br><br>
+                <input type="submit" id="submit1">
+                <br><br>
+                <p id="paragraph1"></p>
+                <br><br>
+                <button style="display: none;" id="reestablecerjuego" onclick="reiniciarnum()">Reiniciar el juego</button>
+            </div>
+        </div>
+    
+        <div id="formularioOpcion2" style="display: none;">
+            <div class="form">
+                <label for="decabin">Ingrese el número en Decimal que va a convertir a Binario</label><br>
+                <input type="number" id="decabin" placeholder="Ejemplo: 1534"><br><br>
+                <input type="submit" id="submit2.1"><br>
+                <p id="paragraph2.1"></p>
+            </div>
+            <div class="form">
+                <label for="binadec">Ingrese el número en Binario que va a convertir a Decimal</label><br>
+                <input type="text" id="binadec" placeholder="Ejemplo: 101010101011"><br><br>
+                <input type="submit" id="submit2.2"><br>
+                <p id="paragraph2.2"></p>
+            </div>
+        </div>
+    
+        <div id="formularioOpcion3" style="display: none;">
+            <div class="form">
+                <label for="decaoct">Ingrese el número en Decimal que va a convertir a Octal</label><br>
+                <input type="number" id="decaoct" placeholder="Ejemplo: 8192"><br><br>
+                <input type="submit" id="submit3.1">
+                <p id="paragraph3.1"></p>
+            </div>
+            <div class="form">
+                <label for="octadec">Ingrese el número en Octal que va a convertir a Decimal</label><br>
+                <input type="text" id="octadec" placeholder="Ejemplo: 7456"><br><br>
+                <input type="submit" id="submit3.2">
+                <p id="paragraph3.2"></p>
+            </div>
+        </div>
+    
+        <div id="formularioOpcion4" style="display: none;">
+            <div class="form">
+                <label for="decahex">Ingrese el número en Decimal que va a convertir a Hexadecimal</label><br>
+                <input type="number" id="decahex" placeholder="Ejemplo: 3918"><br><br>
+                <input type="submit" id="submit4.1">
+                <p id="paragraph4.1"></p>
+            </div>
+            <div class="form">
+                <label for="hexadec">Ingrese el número en Hexadecimal que va a convertir a Decimal</label><br>
+                <input type="text" id="hexadec" placeholder="Ejemplo: 5F3A"><br><br>
+                <input type="submit" id="submit4.2">
+                <p id="paragraph4.2"></p>
+            </div>
+        </div>
+        <div id="formularioOpcion5" style="display: none;">
+            <div class="form">
+                <label>
+                    Ingrese el número que desea saber si es perfecto o no <br>
+                    <input type="number" id="perfectNumber">
+                </label>
+                <br><br>
+                <input type="submit" id="submit5"></input>
+                <p id="paragraph5"></p>
+            </div>
+        </div>
+    </main>
+
+    <br>
+    <hr>
+    <br>
+    <p id="paragraph">
+        Por favor, no hagas clic en la siguiente imagen
+    </p>
+    <a href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ" target = "_blank"><img src = "1A DSM/1A DSM.jpg" alt = "1A DSM"></a>
+    <br><br>
+    <footer>
+        &copy: 2024 Hugu34
+    </footer>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="script.css">
+</body>
+</html>
